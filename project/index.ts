@@ -18,10 +18,6 @@ export function fill_numeric_list(list:number[]) {
     if(list.length != 10) {
         return [`ERROR: the keyboard should have 10 digits`]
     }
-    // If the first element is not 0
-    else if(list[0] != 0){
-        return [`ERROR: the first digit should be 0`]
-    }
     else {
         // Verify numbers aren't repeated
         if(new Set(list).size < list.length) {
